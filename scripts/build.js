@@ -11,7 +11,11 @@ const cacheRoot = resolve(__dirname, '../.cache')
 function build() {
   rollup({
     input: entrypoint,
-    plugins: [autoExternal(), typescript({ cacheRoot }), terser()],
+    plugins: [
+      autoExternal(),
+      typescript({ cacheRoot, useTsconfigDeclarationDir: true }),
+      terser(),
+    ],
   }).then(bundle => bundle.write({ file: distPath, format: 'cjs' }))
 }
 

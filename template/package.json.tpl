@@ -16,6 +16,6 @@
   "author": "{{{author}}}",
   "license": "{{license}}",
   "dependencies": {
-    "tacer-template-lib": "^0.1.0",
+    "tacer-template-lib": "^0.1.0"
   }
 }

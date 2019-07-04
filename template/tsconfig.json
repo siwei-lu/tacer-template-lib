@@ -3,6 +3,8 @@
     "baseUrl": "./src",
     "paths": {
       "~/*": ["./*"]
-    }
+    },
+    "declaration": true,
+    "declarationDir": "./types",
   }
 }

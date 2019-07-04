@@ -7,11 +7,13 @@ const { terser } = require('rollup-plugin-terser')
 const entrypoint = resolve(`${process.cwd()}/src/index.ts`)
 const distPath = resolve(`${process.cwd()}/dist/index.js`)
 const cacheRoot = resolve(__dirname, '../.cache')
-const declarationDir = resolve(`${process.cwd()}/types`)
+const testdir = resolve(`${process.cwd()}/test`)
 
 const tsconfigDefaults = {
-  declarationDir,
-  declaration: true,
+  exclude: [
+    "test/",
+    "types/"
+  ]
 }
 
 function build() {

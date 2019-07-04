@@ -22,9 +22,8 @@
     "rollup-plugin-terser": "^5.1.0",
     "rollup-plugin-typescript2": "^0.21.2",
     "tacer-seed": "^0.1.0",
+    "ts-mocha": "^6.0.0",
+    "mocha": "^6.1.4",
     "typescript": "^3.5.2"
-  },
-  "devDependencies": {
-    "@types/rollup": "^0.54.0"
   }
 }

@@ -15,7 +15,10 @@
   ],
   "author": "{{{author}}}",
   "license": "{{license}}",
-  "dependencies": {
-    "tacer-template-lib": "^0.1.0"
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "tacer-template-lib": "^0.2.0"
   }
 }

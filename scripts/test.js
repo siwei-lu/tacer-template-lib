@@ -1,11 +1,10 @@
-const { resolve } = require('path')
-const { execFile } = require('child_process')
-
-const tsMocha = resolve(__dirname, '../node_modules/.bin/ts-mocha')
-const testdir = resolve(`${process}/test`)
+const { spawn } = require('child_process')
 
 function test() {
-  execFile(tsMocha, ['--paths', `${testdir}/index.ts`, `${testdir}/**/*.ts`])
+  spawn('ts-mocha', ['--paths', `test/index.ts`, `test/**/*.ts`], {
+    stdio: 'inherit',
+    cwd: process.cwd(),
+  })
 }
 
 module.exports = test

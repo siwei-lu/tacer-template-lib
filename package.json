@@ -3,7 +3,6 @@
   "version": "0.2.1",
   "description": "A tacer template for creating a library project.",
   "bin": {
-    "generate": "bin/generate.js",
     "tacer-script": "bin/script.js"
   },
   "scripts": {
@@ -17,13 +16,12 @@
   "author": "Idan Loo <im@siwei.lu>",
   "license": "MIT",
   "dependencies": {
+    "jest": "^24.8.0",
     "rollup": "^1.16.4",
     "rollup-plugin-auto-external": "^2.0.0",
     "rollup-plugin-terser": "^5.1.0",
     "rollup-plugin-typescript2": "^0.21.2",
-    "tacer-seed": "^0.1.0",
-    "ts-mocha": "^6.0.0",
-    "mocha": "^6.1.4",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.2"
   }
 }

@@ -6,7 +6,7 @@
     "tacer-script": "bin/script.js"
   },
   "scripts": {
-    "test": ""
+    "build": "tacer-script build"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "rollup-plugin-typescript2": "^0.21.2",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "tacer-template-seed": "^0.0.3"
   }
 }

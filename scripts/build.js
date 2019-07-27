@@ -10,10 +10,7 @@ const cacheRoot = resolve(__dirname, '../.cache')
 const testdir = resolve(`${process.cwd()}/test`)
 
 const tsconfigDefaults = {
-  exclude: [
-    "test/",
-    "types/"
-  ]
+  exclude: ['__tests__/', 'types/'],
 }
 
 function build() {

@@ -1,6 +1,6 @@
 {
   "name": "tacer-template-lib",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A tacer template for creating a library project.",
   "bin": {
     "tacer-script": "bin/script.js"

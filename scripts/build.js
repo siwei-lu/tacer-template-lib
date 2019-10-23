@@ -10,7 +10,7 @@ const cacheRoot = resolve(__dirname, '../.cache')
 const testdir = resolve(`${process.cwd()}/test`)
 
 const tsconfigDefaults = {
-  exclude: ['__tests__/', 'types/'],
+  exclude: ['**/__tests__/**/*'],
 }
 
 function build() {
@@ -25,7 +25,9 @@ function build() {
       }),
       terser(),
     ],
-  }).then(bundle => bundle.write({ file: distPath, format: 'cjs' }))
+  })
+    .then(bundle => bundle.write({ file: distPath, format: 'cjs' }))
+    .catch(err => console.error(err) || process.exit(1))
 }
 
 module.exports = build
